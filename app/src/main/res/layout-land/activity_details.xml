@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageviewdetails"
+        android:layout_width="125dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtviewcntrynamedetails"
+        app:layout_constraintEnd_toStartOf="@+id/txtviewcntrynamedetails"
+        app:layout_constraintStart_toStartOf="@+id/txtviewcntrynamedetails"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ca" />
+
+    <TextView
+        android:id="@+id/txtviewCasesdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cases"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtviewdeathsdetails"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtviewdeathsdetails"
+        android:layout_width="94dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="66dp"
+        android:text="Deaths"
+        app:layout_constraintBottom_toTopOf="@+id/btnbackdetails"
+        app:layout_constraintEnd_toEndOf="@+id/btnbackdetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewcntrynamedetails" />
+
+    <TextView
+        android:id="@+id/txtviewuserratingdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginRight="174dp"
+        android:text="UserRating"
+        app:layout_constraintEnd_toStartOf="@+id/btneditdetails"
+        app:layout_constraintStart_toEndOf="@+id/txtviewdeathsdetails"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtviewusernotesdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="71dp"
+        android:text="UserNotes"
+        app:layout_constraintBottom_toBottomOf="@+id/txtviewdeathsdetails"
+        app:layout_constraintStart_toStartOf="@+id/txtviewuserratingdetails"
+        app:layout_constraintTop_toTopOf="@+id/txtviewuserratingdetails" />
+
+    <Button
+        android:id="@+id/btnbackdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btneditdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="30dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtviewcntrynamedetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="28dp"
+        android:text="Countryname"
+        app:layout_constraintBottom_toTopOf="@+id/txtviewCasesdetails"
+        app:layout_constraintStart_toEndOf="@+id/txtviewCasesdetails" />
+</androidx.constraintlayout.widget.ConstraintLayout>
